@@ -1,0 +1,10 @@
+<div>
+  <h1 style="color: red">Api Personas Standalone!!!!</h1>
+  @if (personas.length > 0) {
+  <ul class="list-group">
+    @for (persona of personas; track $index) {
+    <li class="list-group-item">{{ persona.Nombre }}, {{ persona.Email }}</li>
+    }
+  </ul>
+  }
+</div>
